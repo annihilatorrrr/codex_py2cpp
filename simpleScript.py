@@ -1,7 +1,6 @@
 def add_something(x, y):
     print("casually adding some stuff together")
-    z = x + y
-    return z
+    return x + y
 
 
 def print_something_fancy(n):
@@ -13,7 +12,7 @@ def fibonacci(n):
         print("Incorrect input")
     elif n == 0:
         return 0
-    elif n == 1 or n == 2:
+    elif n in [1, 2]:
         return 1
     else:
         return fibonacci(n - 1) + fibonacci(n - 2)
@@ -24,5 +23,5 @@ if __name__ == "__main__":
     x = add_something(5, 4)
     print("taking the result and printing something fancy with it...")
     print_something_fancy(x)
-    print("doing the fibonacci of {}...".format(35))
+    print('doing the fibonacci of 35...')
     print(fibonacci(35))
